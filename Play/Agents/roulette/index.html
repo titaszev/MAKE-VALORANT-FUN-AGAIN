@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay loop plays-inline class="menu-video">
+      <source
+        src="../../../assets/Battle Pass Glitches.webm"
+        type="video/mp4"
+      />
+    </video>
+    <div class="content">
+      <button class="back-button" onclick="window.location.href='../'">
+        BACK
+      </button>
+      <button onclick="roll()" class="rollbutton">ROLL</button>
+      <div id="agents" class="agents">
+        <div class="agent-card controllers">
+          <img src="assets/Astra_icon.png" alt="" />
+        </div>
+        <div class="agent-card initiators">
+          <img src="assets/Breach_icon.png" alt="" />
+        </div>
+        <div class="agent-card controllers">
+          <img src="assets/Brimstone_icon.png" alt="" />
+        </div>
+        <div class="agent-card sentinels">
+          <img src="assets/Chamber_icon.png" alt="" />
+        </div>
+        <div class="agent-card sentinels">
+          <img src="assets/Cypher_icon.png" alt="" />
+        </div>
+        <div class="agent-card sentinels">
+          <img src="assets/Deadlock_icon.webp" alt="" />
+        </div>
+        <div class="agent-card initiators">
+          <img src="assets/Fade_icon.png" alt="" />
+        </div>
+        <div class="agent-card initiators">
+          <img src="assets/Gekko_icon.png" alt="" />
+        </div>
+        <div class="agent-card controllers">
+          <img src="assets/Harbor_icon.png" alt="" />
+        </div>
+        <div class="agent-card duelists">
+          <img src="assets/Jett_icon.png" alt="" />
+        </div>
+        <div class="agent-card initiators">
+          <img src="assets/KAYO_icon.png" alt="" />
+        </div>
+        <div class="agent-card sentinels">
+          <img src="assets/Killjoy_icon.png" alt="" />
+        </div>
+        <div class="agent-card duelists">
+          <img src="assets/Neon_icon.png" alt="" />
+        </div>
+        <div class="agent-card controllers">
+          <img src="assets/Omen_icon.png" alt="" />
+        </div>
+        <div class="agent-card duelists">
+          <img src="assets/Phoenix_icon.png" alt="" />
+        </div>
+        <div class="agent-card duelists">
+          <img src="assets/Raze_icon.png" alt="" />
+        </div>
+        <div class="agent-card duelists">
+          <img src="assets/Reyna_icon.png" alt="" />
+        </div>
+        <div class="agent-card sentinels">
+          <img src="assets/Sage_icon.png" alt="" />
+        </div>
+        <div class="agent-card initiators">
+          <img src="assets/Skye_icon.png" alt="" />
+        </div>
+        <div class="agent-card initiators">
+          <img src="assets/Sova_icon.png" alt="" />
+        </div>
+        <div class="agent-card controllers">
+          <img src="assets/Viper_icon.png" alt="" />
+        </div>
+        <div class="agent-card duelists">
+          <img src="assets/Yoru_icon.png" alt="" />
+        </div>
+      </div>
+
+      <div class="filters">
+        <button class="filter-button" onclick="lockElements(controllers)">
+          Controllers
+        </button>
+        <button class="filter-button" onclick="lockElements(duelists)">
+          Duelists
+        </button>
+        <button class="filter-button" onclick="lockElements(initiators)">
+          Initiators
+        </button>
+        <button class="filter-button" onclick="lockElements(sentinels)">
+          Sentinels
+        </button>
+      </div>
+
+      <button class="reset-button" onclick="reset()">RESET</button>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

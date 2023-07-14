@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Tungsten;
+  font-weight: bold;
+  src: url("assets/Tungsten-Bold.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tungsten;
+  font-weight: bold;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body video {
+  z-index: -1;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.buttons button {
+  margin-left: 40px;
+  font-size: 60px;
+  color: white;
+  background: transparent;
+  border: transparent;
+  display: inline-block;
+}
+button:not(:first-child)::before {
+  content: " ";
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translateY(30px) translateX(-20px) rotate(45deg);
+  transition: 0.5s;
+}
+button:first-child::before {
+  content: " ";
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translateY(65px) translateX(-20px) rotate(45deg);
+  transition: 0.5s;
+}
+button:not(:first-child):hover:before {
+  content: " ";
+  background-color: #42fed0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translateY(30px) translateX(-20px) rotate(225deg);
+}
+button:first-child:hover::before {
+  content: " ";
+  background-color: #42fed0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translateY(65px) translateX(-20px) rotate(225deg);
+}
+.buttons button:first-child {
+  color: #fd4556;
+  font-size: 120px;
+}
+.buttons button:hover {
+  color: #42fed0;
+}
