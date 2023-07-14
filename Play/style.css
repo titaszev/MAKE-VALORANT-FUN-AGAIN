@@ -1,7 +1,7 @@
 @font-face {
   font-family: Tungsten;
   font-weight: bold;
-  src: url("../../assets/Tungsten-Bold.otf") format("opentype");
+  src: url("../assets/Tungsten-Bold.otf") format("opentype");
 }
 * {
   margin: 0;
