@@ -124,7 +124,8 @@ body video {
   cursor: pointer;
   height: 100px;
 }
-.filter-button::before {
+
+.inactive::before {
   content: "";
   position: absolute;
   top: 30px;
@@ -135,9 +136,23 @@ body video {
   border-radius: solid white;
 }
 
-.active {
-  background-color: greenyellow;
+.active::before {
+  content: url(assets/x-symbol-svgrepo-com.svg);
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 100%;
+  background-color: rgba(255, 255, 255, 0.363);
+  width: 40px;
+  height: 40px;
+  border-radius: solid white;
 }
-.inactive {
-  background-color: gray;
+
+.lockSentinels {
+}
+.lockInitiators {
+}
+.lockDuelists {
+}
+.lockControllers {
 }

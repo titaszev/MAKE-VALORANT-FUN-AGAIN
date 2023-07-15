@@ -88,16 +88,28 @@
       </div>
 
       <div class="filters">
-        <button class="filter-button" onclick="lockElements(controllers)">
+        <button
+          class="filter-button lockControllers inactive"
+          onclick="filter(controllers, filterControllers)"
+        >
           Controllers
         </button>
-        <button class="filter-button" onclick="lockElements(duelists)">
+        <button
+          class="filter-button lockDuelists inactive"
+          onclick="filter(duelists, filterDuelists)"
+        >
           Duelists
         </button>
-        <button class="filter-button" onclick="lockElements(initiators)">
+        <button
+          class="filter-button lockInitiators inactive"
+          onclick="filter(initiators, filterInitiators)"
+        >
           Initiators
         </button>
-        <button class="filter-button" onclick="lockElements(sentinels)">
+        <button
+          class="filter-button lockSentinels inactive"
+          onclick="filter(sentinels, filterSentinels)"
+        >
           Sentinels
         </button>
       </div>
