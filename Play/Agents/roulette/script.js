@@ -2,6 +2,10 @@ const Agents = document.getElementsByClassName("agent-card");
 
 function lock(evt) {
   evt.currentTarget.classList.toggle("locked");
+  const agents = Array.from(Agents);
+  agents.forEach((agent) => {
+    agent.classList.remove("selected", "not-selected");
+  });
 }
 
 for (let i = 0; i < Agents.length; i++) {
