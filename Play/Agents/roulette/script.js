@@ -14,13 +14,16 @@ for (let i = 0; i < Agents.length; i++) {
 }
 
 //roll
-
+let previous = null;
 function roll() {
   const agents = Array.from(Agents);
   const availableAgents = agents.filter(
     (agent) => !agent.classList.contains("locked")
   );
 
+  if (previous !== null) {
+    previous.classList.remove("artwork-selected");
+  }
   agents.forEach((agent) => {
     agent.classList.remove("selected", "not-selected");
   });
@@ -29,6 +32,11 @@ function roll() {
     const randomIndex = Math.floor(Math.random() * availableAgents.length);
     const selectedAgent = availableAgents[randomIndex];
     selectedAgent.classList.add("selected");
+    const SAID = selectedAgent.id;
+    const SAartwork = document.getElementsByClassName(SAID).item(0);
+    previous = SAartwork;
+    SAartwork.classList.remove("artwork-deselected");
+    SAartwork.classList.add("artwork-selected");
 
     const notSelectedAgents = agents.filter((agent) => agent !== selectedAgent);
     notSelectedAgents.forEach((agent) => {
@@ -52,13 +60,6 @@ const controllers = document.getElementsByClassName("controllers");
 const duelists = document.getElementsByClassName("duelists");
 const initiators = document.getElementsByClassName("initiators");
 const sentinels = document.getElementsByClassName("sentinels");
-
-//filters
-
-// console.log(controllers);
-// console.log(duelists);
-// console.log(initiators);
-// console.log(sentinels);
 
 //add
 

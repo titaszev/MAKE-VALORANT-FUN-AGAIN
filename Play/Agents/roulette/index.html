@@ -17,9 +17,100 @@
       <button class="back-button" onclick="window.location.href='../'">
         BACK
       </button>
+      <div class="artwork-wrapper">
+        <img
+          src="assets/artworks/Astra_Artwork_Full.webp"
+          alt=""
+          class="artwork Astra"
+        /><img
+          src="assets/artworks/Neon_Artwork_Full.webp"
+          alt=""
+          class="artwork Neon"
+        /><img
+          src="assets/artworks/Breach_Artwork_Full.webp"
+          alt=""
+          class="artwork Breach"
+        /><img
+          src="assets/artworks/Omen_Artwork_Full.webp"
+          alt=""
+          class="artwork Omen"
+        /><img
+          src="assets/artworks/Brimstone_Artwork_Full.webp"
+          alt=""
+          class="artwork Brimstone"
+        /><img
+          src="assets/artworks/Phoenix_Artwork_Full.webp"
+          alt=""
+          class="artwork Pheonix"
+        /><img
+          src="assets/artworks/Chamber_Artwork_Full.webp"
+          alt=""
+          class="artwork Chamber"
+        /><img
+          src="assets/artworks/Raze_Artwork_Full.webp"
+          alt=""
+          class="artwork Raze"
+        /><img
+          src="assets/artworks/Cypher_Artwork_Full.webp"
+          alt=""
+          class="artwork Cypher"
+        /><img
+          src="assets/artworks/Reyna_Artwork_Full.webp"
+          alt=""
+          class="artwork Reyna"
+        /><img
+          src="assets/artworks/Deadlock_Artwork_Full.webp"
+          alt=""
+          class="artwork Deadlock"
+        /><img
+          src="assets/artworks/Sage_Artwork_Full.webp"
+          alt=""
+          class="artwork Sage"
+        /><img
+          src="assets/artworks/Fade_Artwork_Full.webp"
+          alt=""
+          class="artwork Fade"
+        /><img
+          src="assets/artworks/Skye_Artwork_Full.webp"
+          alt=""
+          class="artwork Skye"
+        /><img
+          src="assets/artworks/Gekko_Artwork_Full.webp"
+          alt=""
+          class="artwork Gekko"
+        /><img
+          src="assets/artworks/Harbor_Artwork_Full.webp"
+          alt=""
+          class="artwork Harbor"
+        /><img
+          src="assets/artworks/Sova_Artwork_Full.webp"
+          alt=""
+          class="artwork Sova"
+        /><img
+          src="assets/artworks/Jett_Artwork_Full.webp"
+          alt=""
+          class="artwork Jett"
+        /><img
+          src="assets/artworks/Viper_Artwork_Full.webp"
+          alt=""
+          class="artwork Viper"
+        /><img
+          src="assets/artworks/KAYO_Artwork_Full.webp"
+          alt=""
+          class="artwork Kayo"
+        /><img
+          src="assets/artworks/Yoru_Artwork_Full.webp"
+          alt=""
+          class="artwork Yoru"
+        /><img
+          src="assets/artworks/Killjoy_Artwork_Full.webp"
+          alt=""
+          class="artwork Killjoy"
+        />
+      </div>
       <button onclick="roll()" class="rollbutton">ROLL</button>
       <div id="agents" class="agents">
-        <div class="agent-card controllers">
+        <div id="Astra" class="agent-card controllers">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -32,7 +123,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Astra_icon.png" alt="" />
         </div>
-        <div class="agent-card initiators">
+        <div id="Breach" class="agent-card initiators">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -45,7 +136,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Breach_icon.png" alt="" />
         </div>
-        <div class="agent-card controllers">
+        <div id="Brimstone" class="agent-card controllers">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -58,7 +149,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Brimstone_icon.png" alt="" />
         </div>
-        <div class="agent-card sentinels">
+        <div id="Chamber" class="agent-card sentinels">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -71,7 +162,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Chamber_icon.png" alt="" />
         </div>
-        <div class="agent-card sentinels">
+        <div id="Cypher" class="agent-card sentinels">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -84,7 +175,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Cypher_icon.png" alt="" />
         </div>
-        <div class="agent-card sentinels">
+        <div id="Deadlock" class="agent-card sentinels">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -97,7 +188,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Deadlock_icon.webp" alt="" />
         </div>
-        <div class="agent-card initiators">
+        <div id="Fade" class="agent-card initiators">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -110,7 +201,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Fade_icon.png" alt="" />
         </div>
-        <div class="agent-card initiators">
+        <div id="Gekko" class="agent-card initiators">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -123,7 +214,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Gekko_icon.png" alt="" />
         </div>
-        <div class="agent-card controllers">
+        <div id="Harbor" class="agent-card controllers">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -136,7 +227,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Harbor_icon.png" alt="" />
         </div>
-        <div class="agent-card duelists">
+        <div id="Jett" class="agent-card duelists">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -149,7 +240,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Jett_icon.png" alt="" />
         </div>
-        <div class="agent-card initiators">
+        <div id="Kayo" class="agent-card initiators">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -162,7 +253,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/KAYO_icon.png" alt="" />
         </div>
-        <div class="agent-card sentinels">
+        <div id="Killjoy" class="agent-card sentinels">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -175,7 +266,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Killjoy_icon.png" alt="" />
         </div>
-        <div class="agent-card duelists">
+        <div id="Neon" class="agent-card duelists">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -188,7 +279,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Neon_icon.png" alt="" />
         </div>
-        <div class="agent-card controllers">
+        <div id="Omen" class="agent-card controllers">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -201,7 +292,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Omen_icon.png" alt="" />
         </div>
-        <div class="agent-card duelists">
+        <div id="Pheonix" class="agent-card duelists">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -214,7 +305,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Phoenix_icon.png" alt="" />
         </div>
-        <div class="agent-card duelists">
+        <div id="Raze" class="agent-card duelists">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -227,7 +318,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Raze_icon.png" alt="" />
         </div>
-        <div class="agent-card duelists">
+        <div id="Reyna" class="agent-card duelists">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -240,7 +331,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Reyna_icon.png" alt="" />
         </div>
-        <div class="agent-card sentinels">
+        <div id="Sage" class="agent-card sentinels">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -253,7 +344,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Sage_icon.png" alt="" />
         </div>
-        <div class="agent-card initiators">
+        <div id="Skye" class="agent-card initiators">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -266,7 +357,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Skye_icon.png" alt="" />
         </div>
-        <div class="agent-card initiators">
+        <div id="Sova" class="agent-card initiators">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -279,7 +370,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Sova_icon.png" alt="" />
         </div>
-        <div class="agent-card controllers">
+        <div id="Viper" class="agent-card controllers">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>
@@ -292,7 +383,7 @@
           <div class="agent_icon_inner_border_corner-br"></div>
           <img class="agent_icon_icon" src="assets/Viper_icon.png" alt="" />
         </div>
-        <div class="agent-card duelists">
+        <div id="Yoru" class="agent-card duelists">
           <div class="agent_icon_inner_bg"></div>
           <!-- <div class="agent_icon_inner_fg"></div> -->
           <div class="agent_icon_inner_border_t"></div>

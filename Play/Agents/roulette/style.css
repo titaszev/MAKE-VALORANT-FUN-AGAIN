@@ -36,8 +36,9 @@ body video {
 .back-button {
   color: white;
   position: absolute;
-  top: 10px;
-  font-size: 120px;
+  top: 30px;
+  left: 40px;
+  font-size: 100px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -59,7 +60,11 @@ body video {
   position: relative;
   transition: 0.3s ease;
 }
-.agent-card img {
+.agent_artwork {
+  position: absolute;
+  height: 900px;
+}
+.agent-card .agent_icon_icon {
   width: 80px;
   height: 80px;
 }
@@ -234,11 +239,46 @@ body video {
   top: 20%;
   left: 25%;
 }
+.artwork-wrapper {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 100%;
+  height: 100%;
+}
+.artwork {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.artwork-selected {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.artwork-deselected {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 300%;
+}
 .rollbutton {
   z-index: 1;
   color: white;
   font-size: 50px;
-  background-color: #5feeb7a4;
+  background: rgb(80, 231, 148, 0.75);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 231, 148, 0.75) 0%,
+    rgba(69, 218, 159, 0.75) 15%,
+    rgba(88, 232, 184, 0.75) 40%,
+    rgba(65, 217, 169, 0.75) 75%,
+    rgba(82, 230, 186, 0.75) 100%
+  );
   padding: 10px 30px;
   border-radius: 2px;
   transition: 0.3s ease;
@@ -265,7 +305,7 @@ body video {
   cursor: pointer;
   position: absolute;
   bottom: 65px;
-  right: 200px;
+  right: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,8 +317,8 @@ body video {
 }
 .filters {
   position: absolute;
-  top: 150px;
-  right: 100px;
+  bottom: 200px;
+  right: 70px;
   display: flex;
   flex-direction: column;
   align-items: start;
